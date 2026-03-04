@@ -1,0 +1,10 @@
+{
+    "sections":{
+        "productg":{
+            "type": "product-grid",
+
+            "settings": {}
+        },
+    },
+    "order": ["productg"]
+}
