@@ -1,7 +1,8 @@
-<script src="{{ 'product-card.js' | asset_url }}" defer></script>
+{{ 'product-card-custom.css' | asset_url |  stylesheet_tag }}
+<script src="{{ 'product-card-custom.js' | asset_url }}" defer></script>
 
 <div class="product-grid">
-  
+
   {% assign single_product = all_products['camiseta-padrao'] %}
 
   {% if single_product != blank %}
