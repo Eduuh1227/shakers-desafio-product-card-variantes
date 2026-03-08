@@ -1,0 +1,14 @@
+{{ 'product-card-custom.css' | asset_url |  stylesheet_tag }}
+<script src="{{ 'product-card-custom.js' | asset_url }}" defer></script>
+
+<div class="product-grid">
+
+  {% assign single_product = all_products['camiseta-padrao'] %}
+
+  {% if single_product != blank %}
+    {% render 'product-card-custom', product: single_product %}
+  {% else %}
+    <p>Erro: Produto não encontrado. Verifique o handle no Admin do Shopify.</p>
+  {% endif %}
+
+</div>
