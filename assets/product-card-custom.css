@@ -1,0 +1,46 @@
+.product-card img {
+  border-radius: 8px; 
+}
+
+.product-card:hover img {
+  transform: scale(1.05); /* Aquele zoom maroto quando passar o mouse em cima (Fui eu mesmo que escrevi esse comentário viu, não vá achando que  é IA pfvv kkkkk. */
+}
+
+.product-grid select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  background-color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+  appearance: none; 
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+.product-grid select:focus {
+  border-color: #000;
+  outline: none;
+}
+
+
+[data-add-to-cart] {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+[data-add-to-cart]:hover {
+  background-color: #333;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transform: translateY(-2px); 
+}

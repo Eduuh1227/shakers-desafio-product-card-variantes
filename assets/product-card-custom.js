@@ -4,7 +4,7 @@
   const priceElement = document.querySelector('[data-product-price]');
   const addToCartBtn = document.querySelector('[data-add-to-cart]');
   
-  let currentVariantId = productVariants[0]?.id;
+  let VariantId = productVariants[0]?.id;
 
   
   function updateVariantInfo() {
@@ -17,7 +17,7 @@
     });
 
     if (matchedVariant) {
-      currentVariantId = matchedVariant.id; 
+      VariantId = matchedVariant.id; 
       
 
       priceElement.innerText = new Intl.NumberFormat('pt-BR', {
@@ -34,7 +34,7 @@
 
   async function addToCart() {
     const data = {
-      id: currentVariantId,
+      id: VariantId,
       quantity: 1
     };
 
@@ -57,7 +57,7 @@
     }
   }
 
-  colorSelect.addEventListener('change', updateVariantInfo);
+  colorSelect.adidEventLstener('change', updateVariantInfo);
   sizeSelect.addEventListener('change', updateVariantInfo);
   addToCartBtn.addEventListener('click', addToCart);
 
